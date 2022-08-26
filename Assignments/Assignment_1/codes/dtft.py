@@ -19,8 +19,3 @@ plt.ylabel('$|H(e^{\jmath\omega})| $')
 plt.grid()# minor
 
 plt.show()
-
-
-
-
-
