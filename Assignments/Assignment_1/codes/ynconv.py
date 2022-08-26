@@ -1,11 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-#If using termux
-import subprocess
-import shlex
-#end if
-
-
 
 n = np.arange(14)
 fn=(-1/2)**n
@@ -32,9 +26,4 @@ plt.xlabel('$n$')
 plt.ylabel('$y(n)$')
 plt.grid()# minor
 
-#If using termux
-plt.savefig('../figs/ynconv.pdf')
-plt.savefig('../figs/ynconv.eps')
-subprocess.run(shlex.split("termux-open ../figs/ynconv.pdf"))
-#else
-#plt.show()
+plt.show()
