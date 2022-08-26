@@ -1,14 +1,5 @@
-#Code by GVV Sharma
-#November 20, 2018
-#released under GNU GPL
 import numpy as np
 import matplotlib.pyplot as plt
-#if using termux
-import subprocess
-import shlex
-#end if
-
-
 
 n = np.arange(10)
 fn=(-1/2)**n
@@ -20,12 +11,7 @@ plt.xlabel('$n$')
 plt.ylabel('$h(n)$')
 plt.grid()# minor
 
-#if using termux
-plt.savefig('../figs/hn.pdf')
-plt.savefig('../figs/hn.eps')
-subprocess.run(shlex.split("termux-open ../figs/hn.pdf"))
-#else
-#plt.show()
+plt.show()
 
 
 
