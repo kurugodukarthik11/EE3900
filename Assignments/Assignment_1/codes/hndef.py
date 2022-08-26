@@ -1,10 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-#If using termux
-import subprocess
-import shlex
-#end if
-
 
 k = 12
 h = np.zeros(k)
@@ -22,8 +17,4 @@ plt.xlabel('$n$')
 plt.ylabel('$h(n)$')
 plt.grid()# minor
 
-#If using termux
-plt.savefig('../figs/hndef.pdf')
-subprocess.run(shlex.split("termux-open ../figs/hndef.pdf"))
-#else
-#plt.show()
+plt.show()
