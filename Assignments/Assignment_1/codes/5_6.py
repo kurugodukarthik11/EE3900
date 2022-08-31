@@ -1,20 +1,13 @@
+from fractions import Fraction
+from decimal import Decimal
 import numpy as np
 
-
-def h(n):
-    if n < 0:
-        return 0
-    elif n == 0:
-        return 1
-    elif n == 1:
-        return -0.5
-    else:
-        return ((-0.5) ** n) + ((-0.5) ** (n - 2))
-
-
-def sum():
-    return h(0) / (1 - (h(0) / h(1)))
-
-
-s = sum()
-print(s < np.inf)
+repetitions = 100
+d = 2
+r = 0
+for n in range(repetitions):
+    r += Fraction(1, (-d) ** n)
+for n in range(2, repetitions + 2):
+    r += Fraction(1, (-d) ** (n - 2))
+print(Decimal(r.numerator) / Decimal(r.denominator))
+print(r < np.inf)
