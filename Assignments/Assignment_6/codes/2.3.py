@@ -25,6 +25,6 @@ plt.xlabel('t')
 plt.ylabel('x(t)')
 plt.savefig('../figs/2.3.pdf')
 plt.show()
-import shellx
+iimport shlex
 import subprocess
 subprocess.run(shlex.split("termux-open ../figs/2.3.pdf"))
