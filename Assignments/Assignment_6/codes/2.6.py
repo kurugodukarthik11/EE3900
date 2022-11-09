@@ -28,4 +28,4 @@ plt.savefig('../figs/2.6.pdf')
 plt.show()
 import shellx
 import subprocess
-subprocess.run(shlex.split("termux-open ../figs/2.8.pdf"))
+subprocess.run(shlex.split("termux-open ../figs/2.6.pdf"))
