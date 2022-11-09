@@ -16,3 +16,6 @@ plt.xlabel('f (Hz)')
 plt.ylabel('H(f)')
 plt.savefig('../figs/3.9.pdf')
 plt.show()
+import shellx
+import subprocess
+subprocess.run(shlex.split("termux-open ../figs/3.9.pdf"))
