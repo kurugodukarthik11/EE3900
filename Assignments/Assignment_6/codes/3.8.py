@@ -27,3 +27,6 @@ plt.ylabel('X(f)')
 plt.legend(['Simulation', 'Analysis'])
 plt.savefig('../figs/3.8.pdf')
 plt.show()
+import shellx
+import subprocess
+subprocess.run(shlex.split("termux-open ../figs/3.8.pdf"))
