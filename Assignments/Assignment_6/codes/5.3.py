@@ -13,3 +13,6 @@ plt.grid()
 plt.legend(['Simulation', 'Analysis'])
 plt.savefig('../figs/5.3.pdf')
 plt.show()
+import shellx
+import subprocess
+subprocess.run(shlex.split("termux-open ../figs/5.3.pdf"))
